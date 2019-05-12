@@ -23,7 +23,7 @@
 
   * Part 2 [`localhost:4000`](http://localhost:4000)
 
-   I implemented this part by files below
+   - I implemented this part by files below
 
    1. [`/lib/hello_web/controllers/page_controller.ex`](/lib/hello_web/controllers/page_controller.ex) - Render an `index.html` and pass the parameters from request.
 
