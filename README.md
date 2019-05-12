@@ -29,7 +29,7 @@
 
    2. [`/lib/hello.ex`](/lib/hello.ex) - Declared the function `repos({word, page, per_page})` to call the github api.
 
-   3. [`/lib/hello_web/github_resultstream.ex`](/lib/hello_web/github_resultstream.ex) - Github api implemented part. Call a api with url and manipulate body and header from github api.
+   3. [`/lib/github_resultstream.ex`](/lib/github_resultstream.ex) - Github api implemented part. Call a api with url and manipulate body and header from github api.
 
    4. [`/lib/hello_web/views/page_view.ex`](/lib/hello_web/views/page_view.ex) - implemented functions which are relative with template file
    5. [`/lib/hello_web/templates/page/index.html.eex](/lib/hello_web/templates/page/index.html.eex) - Index template for 10 by 10 table with pagination.
