@@ -25,7 +25,7 @@
 
    I implemented this part by files below
 
-   1. [`/lib/hello_web/page_controller.ex`](/lib/hello_web/page_controller.ex) - Render an `index.html` and pass the parameters from request.
+   1. [`/lib/hello_web/controllers/page_controller.ex`](/../lib/hello_web/controllers/page_controller.ex) - Render an `index.html` and pass the parameters from request.
 
    2. [`/lib/hello.ex`](/lib/hello.ex) - Declared the function `repos({word, page, per_page})` to call the github api.
 
