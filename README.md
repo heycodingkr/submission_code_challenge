@@ -1,4 +1,4 @@
-# Submission for Test Omisego
+# Submission for Test
 
 
 ## Prerequisites
