@@ -18,10 +18,10 @@
 
   Run Phoenix server first, then you can check them with url below
 
-  * Part 1 [`localhost:4000/api/test`](http://localhost:4000/api/test)
-   To solve this problem, I used a recursive pattern. the core function located in json_controller [`/lib/hello_web/json_controller.ex`](/lib/hello_web/json_controller.ex)
+  * Part 1 Check URL: [`localhost:4000/api/test`](http://localhost:4000/api/test)
+   - To solve this problem, I used a recursive pattern. the core function located in json_controller [`/lib/hello_web/json_controller.ex`](/lib/hello_web/json_controller.ex)
 
-  * Part 2 [`localhost:4000`](http://localhost:4000)
+  * Part 2 Check URL: [`localhost:4000`](http://localhost:4000)
 
    - I implemented this part by files below
 
