@@ -1,0 +1,68 @@
+
+<section class="row m-4">
+<div class="row d-flex justify-content-center">
+  <nav aria-label="Page navigation">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="<%= @link["prev"] %>">Previous</a>
+      </li>
+      <li class="<%= active_class(@conn, getPage(@link["first"])) %>">
+        <a class="page-link" href="<%= @link["first"] %>"><%= getPage(@link["first"]) %></a>
+      </li>
+      ....
+      <%= for i <- getCurrent(@conn)-2..getCurrent(@conn)+2 do %>
+        <%= if i >1 && i < getLast(@link) do %>
+        <li class="<%= active_class(@conn, i) %>">
+          <a class="page-link" href="?q=elixir&page=<%= i %>&per_page=10"><%= i %></a>
+        </li>
+        <% end %>
+      <% end %>
+      ....
+      <li class="<%= is_last(@link["last"]) %>">
+        <a class="page-link" href="<%= @link["last"] %>" ><%= getLast(@link) %></a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="<%= @link["next"] %>">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="text-center">
+
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">commits_url</th>
+      <th scope="col">clone_url</th>
+      <th scope="col">homepage</th>
+      <th scope="col">stargazers_url</th>
+      <th scope="col">events_url</th>
+      <th scope="col">blobs_url</th>
+      <th scope="col">score</th>
+      <th scope="col">pushed_at</th>
+      <th scope="col">git_url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= if !is_nil(@github["items"]) do %>
+      <%= for v <- @github["items"] do %>
+        <tr>
+          <td><%= v["id"] %></td>
+          <td><%= v["commits_url"] %></td>
+          <td><%= v["clone_url"] %></td>
+          <td><%= v["homepage"] %></td>
+          <td><%= v["stargazers_url"] %></td>
+          <td><%= v["events_url"] %></td>
+          <td><%= v["blobs_url"] %></td>
+          <td><%= v["score"] %></td>
+          <td><%= v["pushed_at"] %></td>
+          <td><%= v["git_url"] %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+</section>
+
