@@ -20,7 +20,7 @@
 
   # Part 1  
    ## Check URL: [`localhost:4000/api/test`](http://localhost:4000/api/test)
-   ## To solve this problem, I used a recursive pattern. the core function located in json_controller [`/lib/hello_web/json_controller.ex`](/lib/hello_web/json_controller.ex)
+   - To solve this problem, I used a recursive pattern. the core function located in json_controller [`/lib/hello_web/json_controller.ex`](/lib/hello_web/json_controller.ex)
 
   # Part 2 
    ## Check URL: [`localhost:4000`](http://localhost:4000)
