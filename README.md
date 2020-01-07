@@ -35,6 +35,4 @@
    4. [`/lib/hello_web/views/page_view.ex`](/lib/hello_web/views/page_view.ex) - implemented functions which are relative with template file
    5. [`/lib/hello_web/templates/page/index.html.eex](/lib/hello_web/templates/page/index.html.eex) - Index template for 10 by 10 table with pagination.
 
-## Conclusion
- It was my first experience that i use the Elixir for application. As i think, Elixir is quite productive and fasnating programming langauge at all. Thank for your code challenge you made for me. It attracts me to Elixir world and also I could spent my time with fun of new knowledge in Elixir.
- BR Jason.
+
